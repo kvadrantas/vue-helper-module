@@ -1,26 +1,32 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Multiple />
+  <Divide />
+  <Subtract />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Multiple from './components/Multiple.vue';
+import Divide from './components/Divide.vue';
+import Subtract from './components/Subtract.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Multiple,
+    Divide,
+    Subtract,
   }
 }
 </script>
 
 <style>
 #app {
+  display: flex;
+  flex-direction: row;
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  height: 100%;
+  width: 100%;
 }
 </style>
